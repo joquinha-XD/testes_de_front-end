@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#conteiner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: solid lightgray 2px;
+    height: 700px;
+    align-items: center;
+    width: 450px;
+}
+
+img{
+    width: 250px;
+    height: 70px;
+    margin-top: 50px;
+}
+
+#p1{
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    color: gray;
+}
+
+a{
+  text-decoration: none;
+}
+
+#logar-face{
+    background-color: #4679e7;
+    font-size: 15px;
+    font-family: 'Roboto', serif;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+
+#digitar-email{
+  margin-top: 20px;
+}
+
+input{
+    padding: 10px;
+    width: 280px;
+    margin-top: 5px;
+    border: 2px lightgray solid;
+    border-radius: 5px;
+}
+
+#saiba-mais{
+  font-size: 15px;
+  text-align: center;
+  color: gray;
+}
+
+#termos{
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+}
+
+#btn{
+  background-color: #4679e7;
+  width: 310px;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  font-size: 15px;
+  font-family: 'Roboto', serif;
+  color: white;
+  font-style: bold;
+}
+
+.erro{
+  border-color: red;
+}
