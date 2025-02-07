@@ -1,36 +1,49 @@
-function registroInsta (){
-  const email = document.querySelector("#digitar-email")
-  const senha = document.querySelector("#digitar-senha")
-  const nome = document.querySelector("#digitar-nome")
-  const usuario = document.querySelector("#digitar-usuario")
+document.getElementById("btn").addEventListener("click",
+  function(){
+    event.preventDefault()
+    // Capturei os elementos HTML
+    const email = document.querySelector("#email")
+    const senha = document.querySelector("#senha")
+    const nome = document.querySelector("#nome")
+    const usuario = document.querySelector("#usuario")
+    const erroEmail = document.querySelector("#erro-email")
+    const erroSenha = document.querySelector("#erro-senha")
+    const erroNome = document.querySelector("#erro-nome")
+    const erroUsuario = document.querySelector("#erro-usuario")
 
-  const emailValue = email.value
-  const senhaValue = senha.value
-  const nomeValue = nome.value
-  const usuarioValue = usuario.value
+    // Extrair valor digitado pelo usuário no campo input
+    const emailValue = email.value;
+    const senhaValue = senha.value;
+    const nomeValue = nome.value;
+    const usuarioValue = usuario.value;
 
-  if(emailValue === ""){
-    email.classList.add("erro")
-  }
-  else{
-    email.classList.remove("erro")
-  }
-  if(senhaValue === ""){
-    senha.classList.add("erro")
-  }
-  else{
-    senha.classList.remove("erro")
-  }
-  if(nomeValue === ""){
-    nome.classList.add("erro")
-  }
-  else{
-    nome.classList.remove("erro")
-  }
-  if(usuarioValue === ""){
-    usuario.classList.add("erro")
-  }
-  else{
-    usuario.classList.remove("erro")
-  }
-}
+    // Verificar se o campo do input está vazio
+    if(emailValue === ""){
+      email.classList.add("erro")
+      erroEmail.textContent = "O campo de email não pode estar vazio"
+    } else {
+      email.classList.remove("erro")
+      erroEmail.textContent = ""
+    }
+    if(senhaValue === ""){
+      senha.classList.add("erro")
+      erroSenha.textContent = "O campo de senha não pode estar vazio"
+    } else {
+      senha.classList.remove("erro")
+      erroSenha.textContent =""
+    }
+    if(nomeValue === ""){
+      nome.classList.add("erro")
+      erroNome.textContent = "O campo de nome não pode estar vazio"
+    } else {
+      nome.classList.remove("erro")
+      erroNome.textContent =""
+    }
+    if(usuarioValue === ""){
+      usuario.classList.add("erro")
+      erroUsuario.textContent = "O campo de usuário não pode estar vazio"
+    } else {
+      usuario.classList.remove("erro")
+      erroUsuario.textContent =""
+    }
+})
