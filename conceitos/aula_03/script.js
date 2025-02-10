@@ -17,10 +17,13 @@ document.getElementById("btn").addEventListener("click",
     const nomeValue = nome.value;
     const usuarioValue = usuario.value;
 
+    const todosCampos = false;
+
     // Verificar se o campo do input está vazio
     if(emailValue === ""){
       email.classList.add("erro")
       erroEmail.textContent = "O campo de email não pode estar vazio"
+      todosCampos = true;
     } else {
       email.classList.remove("erro")
       erroEmail.textContent = ""
@@ -28,6 +31,7 @@ document.getElementById("btn").addEventListener("click",
     if(senhaValue === ""){
       senha.classList.add("erro")
       erroSenha.textContent = "O campo de senha não pode estar vazio"
+      todosCampos = true;
     } else {
       senha.classList.remove("erro")
       erroSenha.textContent =""
@@ -35,6 +39,7 @@ document.getElementById("btn").addEventListener("click",
     if(nomeValue === ""){
       nome.classList.add("erro")
       erroNome.textContent = "O campo de nome não pode estar vazio"
+      todosCampos = true;
     } else {
       nome.classList.remove("erro")
       erroNome.textContent =""
@@ -42,8 +47,13 @@ document.getElementById("btn").addEventListener("click",
     if(usuarioValue === ""){
       usuario.classList.add("erro")
       erroUsuario.textContent = "O campo de usuário não pode estar vazio"
+      todosCampos = true;
     } else {
       usuario.classList.remove("erro")
       erroUsuario.textContent =""
+    }
+
+    if(!todosCampos){
+      window.location.href = "pagina-BV.html"
     }
 })
