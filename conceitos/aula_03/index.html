@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="t-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Site instagram</title>
   </head>
   <body>
-    <div id="conteiner">
-      <img src="logo_insta.png" alt="">
-      <p id="p1">Cadastre-se para ver fotos e vídeos<br>dos seus amigos</p>
-      <div id="link">
-        <a href="https://facebook.com/login" target="_blank" id="logar-face">Iniciar sessão com o Facebook</a>
-      </div>
+    <main id="conteiner">
+      <header>
+        <img src="logo_insta.png" alt="">
+        <p id="p1">Cadastre-se para ver fotos e vídeos<br>dos seus amigos</p>
+        <div id="link">
+          <a href="https://facebook.com/login" target="_blank" id="logar-face">Iniciar sessão com o Facebook</a>
+        </div>
+      </header>
 
-      <input type="email"id="email"placeholder="Número do celular ou email">
-      <p id="erro-email"></p>
-      <input type="password" id="senha" placeholder="Senha">
-      <p id="erro-senha"></p>
-      <input type="text" id="nome" placeholder="Nome completo">
-      <p id="erro-nome"></p>
-      <input type="text" id="usuario" placeholder="Nome de usuário">
-      <p id="erro-usuario"></p>
+      <body>
+        <input type="email"id="email"placeholder="Número do celular ou email">
+        <p id="erro-email"></p>
+        <input type="password" id="senha" placeholder="Senha">
+        <p id="erro-senha"></p>
+        <input type="text" id="nome" placeholder="Nome completo">
+        <p id="erro-nome"></p>
+        <input type="text" id="usuario" placeholder="Nome de usuário">
+        <p id="erro-usuario"></p>
+      </body>
 
-      <p id="saiba-mais">As pessoas que usam nosso serviço podem ter<br>enviado suasinformações de contato para o<br>Instagram.<a href="https://www.facebook.com/help/instagram/261704639352628" target="_blank">Saiba mais</a></p>
-      <p id="termos">Ao se cadastrar, você concorda com nossos<br><a href="https://help.instagram.com/581066165581870/?locale=pt_BR" target="_blank" id="link-termos">Termos, </a><a href="https://www.facebook.com/privacy/policy" target="_blank" id="link-termos">Política de Privacidade</a> e<br><a href="https://privacycenter.instagram.com/policies/cookies/" target="_blank" id="link-termos">Política de Cookies</a></p>
-      <button id="btn" type="button" onclick="registroInsta">Cadastre-se</button>
-    </div>
+      <footer>
+        <p id="saiba-mais">As pessoas que usam nosso serviço podem ter<br>enviado suasinformações de contato para o<br>Instagram.<a href="https://www.facebook.com/help/instagram/261704639352628" target="_blank">Saiba mais</a></p>
+        <p id="termos">Ao se cadastrar, você concorda com nossos<br><a href="https://help.instagram.com/581066165581870/?locale=pt_BR" target="_blank" id="link-termos">Termos, </a><a href="https://www.facebook.com/privacy/policy" target="_blank" id="link-termos">Política de Privacidade</a> e<br><a href="https://privacycenter.instagram.com/policies/cookies/" target="_blank" id="link-termos">Política de Cookies</a></p>
+        <button id="btn" type="button" onclick="registroInsta">Cadastre-se</button>
+      </footer>
+    </main>
 
     <script src="script.js"></script>
   </body>
